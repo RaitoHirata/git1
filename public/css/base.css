@@ -1,0 +1,535 @@
+@charset "UTF-8";
+
+/* reset */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+table,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 100%;
+	text-align: left;
+	list-style-type: none;
+	border-collapse: collapse;
+}
+
+textarea {
+	font-size: 100%;
+	vertical-align: middle;
+}
+
+img {
+	border-style: none;
+	display: block;
+}
+
+hr {
+	display: none;
+}
+
+em {
+	font-style: normal
+}
+
+input {
+	line-height: auto;
+	vertical-align: middle;
+}
+
+strong.more {
+	color: #c30
+}
+
+a {
+	text-decoration: none;
+}
+
+html {}
+
+body {
+	font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* 上の部分は気にせずここから書く */
+
+body {
+	justify-content: center;
+	margin: 0 auto;
+}
+/*header用css*/
+.header {
+	width: 100%;
+	display: flex;
+}
+
+.headerlist {
+	width: 100%;
+	display: flex;
+	background-color:rgba(134, 134, 134, 0.7);
+	margin: 0 auto;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+}
+
+.coment {
+	color: white;
+	opacity: 0.7;
+	width: 200px;
+	font-size: 12px;
+}
+
+.title  {
+	width: 70%;
+	color:black;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.sidelink {
+	color: white;
+	padding:0 1%;
+	width: 100px;
+	font-size: 12px;
+}
+
+.headerlist a:hover{
+	color: black;
+}
+
+/*index.php ホームページ用css*/
+.wrapper {
+	width:80%;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	margin: 50px auto;
+}
+
+.search_result p {
+	margin-top: 20px;
+}
+
+.search_result span {
+	font-weight: bold;
+	color: #535353;
+	background: linear-gradient(transparent 50%, yellow 50%);
+
+}
+
+.search_result table {
+	width: 50%;
+	margin-top: 10px;
+	text-align: left;
+	border: solid 1px rgb(164, 163, 161);
+	border-radius: 5px;
+	padding: 20px;
+	line-height: 30px;
+}
+
+
+.search_result_artist_title,
+.search_result_song_title ,
+.search_result_mylist_title {
+	font-weight: bolder;
+	color: rgb(57, 9, 144);
+	width: 200px;
+	text-align: left;
+}
+
+
+.search_result_song a {
+	color: rgb(48, 176, 235);
+	text-decoration: underline;
+
+}
+
+.search_result_song a:hover {
+	color: black;
+}
+
+h1 {
+	margin-left: 30px;
+	color: #6c6;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+
+/*score.php 楽譜表示画面(一般)*/
+.score_title{
+	width: 50%;
+}
+
+/*login.php ログイン画面用css*/
+.login {
+	background-image: url("/Slow-High/img/eric2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	margin: 0 auto;
+}
+
+.background_color{
+	background-color: rgba(249, 248, 248, 0.8);
+	width: 100%;
+}
+
+.login_wrapper {
+	width: 70%;
+	height: 100vh;
+	margin: 0 auto;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.logintitle {
+	font-size: 30px;
+	line-height: 100px;
+	align-items: center;
+	text-align: center;
+}
+
+.email,
+.password {
+	width: 50%;
+	justify-content: center;
+}
+
+.email {
+	margin: 0 3px;
+}
+
+.password {
+	margin: 0 35px;
+}
+form  {
+	margin-top: 10px;
+	width: 100%;
+}
+
+.search {
+	width: 90%;
+	height: 40px;
+	border-radius: 10px;
+}
+
+.search_button {
+	width: 7%;
+	margin: 0 auto;
+	height: 40px;
+	border-radius: 10px;
+	background-color: g;
+}
+
+.login_wrapper form p {
+	height: 40px;
+	line-height: 40px;
+}
+
+.pw_reset_info{
+	position: absolute;
+	right: 50px;
+	bottom: 50px;
+}
+
+/*管理者ページ*/
+.mngtitle {
+	font-size: 25px;
+}
+
+.return {
+	position: fixed;
+	bottom:10px;
+	right: 10vw;
+}
+
+.manager_contents  {
+	margin-top: 10%;
+}
+
+.manager_contents p {
+	font-weight: bold;
+}
+
+/*楽譜データ一覧*/
+.scoredata_wrapper{
+	width: 95%;
+	margin: 2% auto;
+
+}
+.scoretable {
+	width: 100%;
+	font-size: 15px;
+	border:1px solid black ;
+	margin: 0 auto;
+}
+
+.tabletitle {
+	background-color: rgb(131, 131, 243);
+	color: white;
+	height: 30px;
+}
+
+.register{
+	position: fixed;
+	left:46%;
+	top: 50%;
+	color: rgb(19, 16, 27);
+	font-weight: bold;
+	background: linear-gradient(rgb(233, 235, 79), rgb(232, 235, 35));
+	border: 1px solid rgb(83, 87, 35);
+	border-radius: 5px;
+	width: 10%;
+	height: 5%;
+	cursor: pointer;
+}
+
+.tabletitle_button {
+	width: 7%;
+	text-align: center;
+}
+
+.tabletitle_release {
+	width: 10%;
+	text-align: center;
+}
+
+.tabletitle_id{
+	width: 5%;
+}
+
+.scoretable tr ,
+.scoretable th {
+	border:1px solid black ;
+	text-align: center;
+}
+
+.tablebutton{
+	text-decoration: underline blue;
+}
+
+.scoretable tr{
+	line-height: 30px;
+}
+
+.release,
+.no_release {
+	text-align: center;
+	padding: 0 5px;
+}
+
+.release {
+	color: rgb(255, 98, 0);
+	font-weight: bold;
+	
+}
+
+.set_release {
+	color: red;
+	font-weight: bold;
+	background: linear-gradient(rgb(248, 249, 244), rgb(239, 237, 202));
+	border: 1px solid rgb(83, 87, 35);
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.set_no_release {
+	color: rgb(17, 0, 255);
+	font-weight: bold;
+	background: linear-gradient(rgb(173, 240, 229), rgb(174, 212, 240));
+	border: 1px solid rgb(83, 87, 35);
+	border-radius: 5px;
+}
+
+
+.scoretable tr:nth-child(even) {
+	background: #f5fcfc;
+}
+
+.scoretable tr:nth-child(odd) {
+	background: #b0f7f7;
+}
+
+.newscoretext {
+	position: fixed;
+	bottom:10px;
+	left: 10vw;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
+	font-size: 15px;
+}
+
+.pagination li {
+	margin: 0 10px;
+}
+
+.scoredetail {
+	width: 80%;
+	text-align: left;
+}
+
+.scoredetail_title {
+	width: 30%;
+}
+
+.score_body{
+	display: flex;
+	width: 80%;
+}
+
+.scorefile {
+	position:absolute;
+	left: 10%;
+	width: 20%;
+	cursor: pointer;
+
+}
+
+.scrollbtn {
+	width: 100px;
+	position: fixed;
+	bottom: 10px;
+	margin: 0 50%;
+	border-radius: 5px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 10px;
+}
+
+.scrollbtn:hover{
+	cursor: pointer;
+}
+
+.start {
+	background: #6c6;
+}
+
+.stop {
+  display: none;  /* stopははじめ非表示に指定 */
+  background: #f66;
+}
+
+.scorefile_stop {
+	z-index: 1;
+	background-color: aliceblue;
+	border-radius: 10px;
+	border: 1px solid aliceblue;
+	position:fixed;
+	height: 100vh;
+	object-fit: cover;
+	margin:auto 0;
+	right: -40%;
+	top : 0px;
+	width: 40%;
+  	transition: .7s;
+}
+
+.stopfile_viewbtn {
+	cursor: pointer;
+	position: fixed;
+	top:50px;
+	right: 0px;
+	background: linear-gradient(rgb(245, 249, 248), rgb(173, 234, 239));
+	opacity: 1;
+	transition: .7s;
+	border-radius: 5px;
+	color: rgb(113, 112, 116);
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.vertical{
+	writing-mode: vertical-lr;
+	text-orientation: upright;
+}
+
+.move_btn {
+	position: fixed;
+	right: 40%;
+	transition: .7s;
+}
+
+.return_move_btn {
+	position: fixed;
+	right: 0;
+	transition: .7s;
+}
+
+.fileshow {
+	right: 0%;
+	top : 0px;
+	width: 40%;
+}
+
+.return_login_search {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	margin-top: 10px;
+
+}
+
+.footer_space {
+	position: fixed;
+	bottom: 20px;
+	margin-top: 100px;
+
+}
+
+/*お気に入り*/
+.mylist_mark {
+	width: 300px;
+	display: flex;
+	margin-bottom: 20px;
+}
+
+
+
+.mylist_mark p {
+	margin: auto 0;
+}
+
+.js-like-toggle {
+	position:relative;
+	color: rgb(189, 188, 188);
+}
+.loved i {
+	color: rgb(255, 207, 13) !important;
+  }
+
